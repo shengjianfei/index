@@ -191,7 +191,7 @@ function MoneyDistribution() {
 
 function load (){
 	var EnvelopeMove = 0;
-    var startX, startY, endX, endY;
+    	var startX, startY, endX, endY;
 	document.getElementById("play-btn").addEventListener("touchstart", touchStart, false);
 	document.getElementById("play-btn").addEventListener("touchmove", touchMove, false);
 	document.getElementById("play-btn").addEventListener("touchend", touchEnd, false);
@@ -208,33 +208,33 @@ function load (){
 	}
 	function touchEnd(event) {
 		$("#play-btn").html("X轴移动大小：" + (endX - startX)+"<br/>"+"Y轴移动大小：" + (endY -startY));
-		
-		var money = changeTwoDecimal(MoneyDistribution());
-		if (EnvelopeMove == 0) {
-			EnvelopeMove = 1;
-			$(".hongbao-paper").animate({ bottom: 45 + '%' }, 500, "easeOutBounce", function () {
-			});
-			$(".hongbao-paper").animate({ bottom: 30 + '%' }, 100, "easeOutBounce", function () {
-				EnvelopeMove=0;
-			});
-			ThisEnvelopeNum++;
-			$('#getmoney').css({ "bottom": '0', 'left': 100 * Math.random() + '%' });
-			$("#getmoney").animate({ left: 100 * Math.random() + '%' }, 10, "linear", function () {
-				$('#getmoney').val('+' + money);
-				$('#getmoney').show();
-				$("#getmoney").animate({ bottom: 100 * Math.random() + '%' }, 500, "linear", function () {
-					$("#getmoney").hide();
-					$('#getmoney').css({ "bottom": '0', 'left': 100 * Math.random() + '%' });
-
-					PreGetMoney += money;
-                    ThisGetMoney += money;
-					$('#AwardMoney').html(changeTwoDecimal(PreGetMoney));
- 					FlagPlay = 0;
+		if((endY -startY)<-50){
+			var money = changeTwoDecimal(MoneyDistribution());
+			if (EnvelopeMove == 0) {
+				EnvelopeMove = 1;
+				$(".hongbao-paper").animate({ bottom: 45 + '%' }, 500, "easeOutBounce", function () {
 				});
-			});
+				$(".hongbao-paper").animate({ bottom: 30 + '%' }, 100, "easeOutBounce", function () {
+					EnvelopeMove=0;
+				});
+				ThisEnvelopeNum++;
+				$('#getmoney').css({ "bottom": '0', 'left': 100 * Math.random() + '%' });
+				$("#getmoney").animate({ left: 100 * Math.random() + '%' }, 10, "linear", function () {
+					$('#getmoney').val('+' + money);
+					$('#getmoney').show();
+					$("#getmoney").animate({ bottom: 100 * Math.random() + '%' }, 500, "linear", function () {
+						$("#getmoney").hide();
+						$('#getmoney').css({ "bottom": '0', 'left': 100 * Math.random() + '%' });
+
+						PreGetMoney += money;
+						ThisGetMoney += money;
+						$('#AwardMoney').html(changeTwoDecimal(PreGetMoney));
+						FlagPlay = 0;
+					});
+				});
+			}
 		}
 	}
-
 }
 window.addEventListener('load',load, false);
 
