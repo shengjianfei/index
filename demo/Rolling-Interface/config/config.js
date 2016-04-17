@@ -3,7 +3,7 @@
  */
 //每天0点数据自动更新
 //显示的界面(客户案例，供应商，分销商，交易订单);图片放入img文件夹
-var ChangeInterfaceTime=10*1000;        //定时界面切换时间（ms）
+var ChangeInterfaceTime=5*1000;        //定时界面切换时间（ms）
 
 /*以下是交易订单滚动设置*/
 var SetOrderRows=20;                       //设定每天0点开始“交易订单”行数
@@ -26,6 +26,8 @@ var SetSuppliersRow=32;                 //供应商卡片总数（数量不能�
 
 /*以下是客户案例设置*/
 var SetClientCaseRow=5;                 // 客户案例总数（数量不能超过以下ImgARR数组长度）
+
+var firstOrderRows=SetOrderRows;
 
 //ImgARR数组依次为：
 // 商户二维码图片，商户标题，商户旺铺名称,商户旺铺图片。
