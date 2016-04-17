@@ -30,7 +30,7 @@ $(document).ready(function () {
     ProgressBar();
     BtnScale();
     PreBegainGame();
-    PlayGame();
+    //PlayGame();
     ReplayGame();
 
     var NewCircle = new Ray();
