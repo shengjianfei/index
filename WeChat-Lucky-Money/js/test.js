@@ -208,8 +208,8 @@ function load (){
 	}
 	function touchEnd(event) {
 		$("#play-btn").html("X轴移动大小：" + (endX - startX)+"<br/>"+"Y轴移动大小：" + (endY -startY));
-		if((startY - endY)<50){
-			alert((startY - endY));
+		if((endX - startX)>50){
+			alert((endX - startX));
 			var money = changeTwoDecimal(MoneyDistribution());
 			if (EnvelopeMove == 0) {
 				EnvelopeMove = 1;
