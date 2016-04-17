@@ -1,0 +1,283 @@
+﻿/*         		begain public     		*/
+body{
+    /*overflow-x: hidden;*/
+    font-family: Microsoft YaHei;
+    background-color: black;
+}
+ul,li{
+    padding:0;
+    margin:0;
+}
+/*	begain header	*/
+.top-header{
+    width: 100%;
+    height: 60px;
+    color: #ccc;
+    background-color:black;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    position: relative;
+    display: block;
+    margin:0 auto;
+    width: 100%;
+    height:60px;
+}
+.login{
+    text-align: right;
+}
+.login span{
+    position: relative;
+    top:20px;
+    font-size: 14px;
+    margin:0 20px;
+}
+.login span b{
+    color:red;
+    font-weight: 100;
+}
+
+.aside-block{
+    padding: 0;
+
+}
+.nav-menu{
+    position:relative;
+    width: 100%;
+    line-height: 30px;
+    font-size: 13px;
+    min-width: 150px;
+    color:#898989;
+}
+.nav-menu:hover{
+    background-color: grey;
+}
+.nav-menu .nav-index{
+    display: inline-block;
+     height: 30px;
+     width: 100%;
+     font-size: 13px;
+     cursor: pointer;
+     padding: 0 10px;
+ }
+.nav-menu .nav-index:hover{
+    color:sandybrown;
+}
+.nav-index img{
+    position: relative;
+    bottom:2px;
+}
+.nav-index .first-icon{
+    padding: 0 5px 2px;
+}
+.arrow-icon{
+    position: relative;
+    float:right;
+    right: 0px;
+}
+
+.nav-item{
+    width: 100%;
+    background-color: #393939;
+    display: none;
+    padding-left:38px;
+    color:white;
+}
+.nav-item li{
+    height: 30px;
+    width: 100%;
+    list-style-image:url(../img/bullet_hui.png);
+    cursor: pointer;
+}
+.nav-item li:hover{
+    color:sandybrown;
+}
+.nav-item li span:hover{
+    color:sandybrown;
+}
+.nav-item span{
+    line-height: 20px;
+    font-size: 1.1em;
+}
+/*	end header	*/
+
+.page-block{
+    background-color:black;
+    height: 650px;
+    color:black;
+    padding:0;
+    margin: 0;
+}
+.page-content{
+    background-color:white;
+    height:100%;
+    padding: 0;
+    overflow: hidden;
+    color:black;
+}
+
+.table-content{
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+table{
+    color:black;
+    width:100%;
+    border:1px solid #dddddd;
+    text-align:left;
+}
+
+
+#TableScroll,#resellertable{
+    overflow:scroll;/**/
+    height:650px;
+}
+#TableScroll,#resellertable{
+    overflow:hidden;/**/
+ }
+#resellertable{
+    height:650px;
+}
+#marquee2,
+#suppliers,
+#allreseller{
+    overflow:scroll; 
+    height:650px;
+}
+#marquee2,
+#suppliers,
+#allreseller{
+     overflow:hidden; 
+}
+
+tbody tr td{
+    height: 60px;
+    width: 220px;
+    line-height: 20px;
+    border:1px solid #dddddd;
+}
+
+#TableScroll tr{
+    background-color: #decd40;
+}
+tbody td:first-child{
+    width: 20px;
+}
+.td1,
+.td2{
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    padding-left: 5px;
+}
+.table-title{
+    color:black;
+    background-color: #efefef;
+    font-size:14px;
+    font-family: Microsoft YaHei;
+    padding-left: 5px;
+    height: 30px;
+}
+
+
+.total{
+    background-color: white;
+    z-index: 11;
+    position: absolute;
+    bottom:0px;
+    color:black;
+    font-size: 20px;
+    text-align: left;
+    height: 30px;
+    width: 100%;
+}
+.total span{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.marqueetop{
+    position: relative;
+    height:730px;
+    width:100%;
+    overflow-y:hidden;
+    margin:0px auto;
+}
+.marqueetop li{
+    padding:5px 0;
+    width:100%;
+    height:360px;
+    overflow:hidden;
+}
+.supplier-case{
+    text-align: center;
+    padding: 30px;
+}
+
+.supplier-case img{
+    border: 1px solid #5cb85c;
+    width:100%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+.supplier-case p{
+    border: 1px solid #5cb85c;
+    padding: 5px;
+    font-size: 18px;
+    color:black;
+}
+
+
+.booklet{
+    position: relative;
+    top:2%;
+    left:-2%;
+
+}
+.page-introduce{
+    width: 100%;
+    height:720px;
+    padding-top: 100px;
+    text-align: center;
+}
+.page-introduce img{
+    width:60%;
+    height:40%;
+}
+.page-introduce h1{
+    margin-top: 50px;
+    font-family: Microsoft YaHei;
+}
+.page-phone{
+    position: relative;
+    top:8%;
+    width: 100%;
+    height:90%;
+    background-position: center;
+    background-image:url("../img/phone.png");
+    background-repeat: no-repeat;
+    background-size:58%;
+}
+.phone-img{
+    position: absolute;
+    top:12.6%;
+    left:24.5%;
+    width: 51.3%;
+    height: 74.5%;
+}
+
+
+#blank{
+    position: absolute;
+    width: 50%;
+    top:40%;
+    left:40%;
+    margin: auto;
+    color:black;
+}
