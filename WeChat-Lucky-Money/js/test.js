@@ -188,7 +188,10 @@ function MoneyDistribution() {
     var EachRemainMoney = (Math.random()*(ThisToMoney - PreGetMoney)/(PlayMaxCount-PlayCount))*Math.random();
     return EachRemainMoney;
 }
-
+ 
+/**
+*开始玩游戏
+*/
 function load (){
 	var EnvelopeMove = 0;
     	var startX, startY, endX, endY;
@@ -209,7 +212,7 @@ function load (){
 	function touchEnd(event) {
 		$("#play-btn").html("X轴移动大小：" + (endX - startX)+"<br/>"+"Y轴移动大小：" + (endY -startY));
 		if((startY - endY)>50){
-			alert((startY - endY));
+			//alert((startY - endY));
 			var money = changeTwoDecimal(MoneyDistribution());
 			if (EnvelopeMove == 0) {
 				EnvelopeMove = 1;
