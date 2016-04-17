@@ -208,7 +208,8 @@ function load (){
 	}
 	function touchEnd(event) {
 		$("#play-btn").html("X轴移动大小：" + (endX - startX)+"<br/>"+"Y轴移动大小：" + (endY -startY));
-		if((endY -startY)<-50){
+		if((endY -startY)>-50){
+			alert(1);
 			var money = changeTwoDecimal(MoneyDistribution());
 			if (EnvelopeMove == 0) {
 				EnvelopeMove = 1;
@@ -242,7 +243,7 @@ window.addEventListener('load',load, false);
 /**
 *开始玩游戏
 */
-function PlayGame() {
+/*function PlayGame() {
 	var EnvelopeMove = 0; 
 	var obj = document.getElementById('play-btn');
 	obj.addEventListener('touchmove', function(event) {
@@ -272,7 +273,7 @@ function PlayGame() {
 			});
 		}
     }, false);
-}
+}*/
 /**
 *再一次玩游戏
 */
