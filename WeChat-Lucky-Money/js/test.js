@@ -10,7 +10,7 @@ function checkIsWeixinOpen(){
         }
 
 }
-//window.onload=checkIsWeixinOpen;
+window.onload=checkIsWeixinOpen;
 //var MoneySum = 1000;
 //var PeopleNum = 100;
 
