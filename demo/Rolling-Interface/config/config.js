@@ -3,7 +3,7 @@
  */
 //每天0点数据自动更新
 //显示的界面(客户案例，供应商，分销商，交易订单);图片放入img文件夹
-var ChangeInterfaceTime=15*1000;        //定时界面切换时间（ms）
+var ChangeInterfaceTime=20*1000;        //定时界面切换时间（ms）
 
 /*以下是交易订单滚动设置*/
 var SetOrderRows=20;                       //设定每天0点开始“交易订单”行数
