@@ -1,0 +1,404 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ShengJianfei</title>
+    <meta name="description" content="personal web sites">
+    <meta name="keywords" content="个人网页,前端技术,酷站收藏,创意分享">
+    <meta name="author" content="ShengJianfei">
+    <meta name="Copyright" content="ShengJianfei">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- External CSS-->
+    <link type="text/css" href="stylesheets/main.css" rel="stylesheet">
+    <!-- External JavaScript  -->
+    <script src="javascripts/jquery-1.12.0.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="javascripts/jquery-awesomodals.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="javascripts/index.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--   start header   -->
+    <header class="top-header">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo"/>
+        </div>
+        <nav class="header-nav">
+            <ul class="nav-menu">
+                <li><a>个人主页</a></li>
+                <li><a>前端技术</a></li>
+                <li><a>酷站收藏</a></li>
+                <li><a>创意分享</a></li>
+                <li><a>关于我</a></li>
+            </ul>
+        </nav>
+        <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="menu-text">MENU</span>
+        </a>
+    </header>
+    <!--   end header   -->
+    <!--   start index-nav -->
+    <div class="index-nav">
+        <ul>
+            <li class="nav-item"><span>个人主页</span><i></i></li>
+            <li class="nav-item"><span>前端技术</span><i></i></li>
+            <li class="nav-item"><span>酷站收藏</span><i></i></li>
+            <li class="nav-item"><span>创意分享</span><i></i></li>
+            <li class="nav-item"><span>关于我</span><i></i></li>
+        </ul>
+        <div class="back-top"></div>
+    </div>
+    <!--   end index-nav    -->
+    <!--   start home-top   -->
+    <div class="page-block home-top">
+        <div class="index-home">
+            <img class="head-portrait" src="images/portrait.png" alt="头像"/>
+            <h1>Sheng Jianfei</h1>
+            <p><span>Web designer & Font-end developer</span></p>
+            <div class="info-block">
+                <div class="text-circle">
+                    <canvas class="run-circles" id="CirclesRun1" width="60" height="60">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                    <a class="case-text" href="https://github.com/shengjianfei" target="_blank" title="GitHub"><img src="images/GitHub1.png" alt="QQ"/></a>
+                </div>
+                <div class="text-circle">
+                    <canvas class="run-circles" id="CirclesRun2" width="60" height="60">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                    <a class="case-text" href="mailto:sheng_jianfei@163.com" target="_blank" title="email:sheng_jianfei@163.com"><img src="images/email1.png" alt="QQ"/> </a>
+                </div>
+                <div class="text-circle">
+                    <canvas class="run-circles" id="CirclesRun3" width="60" height=60">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                    <a class="case-text" href="http://wpa.qq.com/msgrd?v=3&uin=1766558755&site=qq&menu=yes" target="_blank" title="QQ:1766558755"><img src="images/QQ1.png" alt="QQ"/></a>
+                </div>
+                <div class="text-circle">
+                    <canvas class="run-circles" id="CirclesRun4" width="60" height=60">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+                    <a class="case-text" href="tel:13666809629" target="_blank" title="call:13666809629"><img src="images/call.png" alt="QQ"/> </a>
+                </div>
+            </div>
+        </div>
+        <div class="see-mywork">
+            <button class="my-work" data-modal="#modal-demo" data-modal-init>see my work</button>
+            <div class="dialogs">
+                <div class="dialog" id="modal-demo">
+                    <div class="dialog-content">
+                        <header class="dialog-header">
+                            <h1 class="dialog-title">Welcome</h1>
+                        </header>
+                        <div class="dialog-body">
+                            <div class="web-app">
+                                <h3>网页设计</h3>
+                                <p><a class='app-link' href="http://ml.mmilai.com/" target="_blank">浙江米来信息科技股份有限公司官方企业站</a></p>
+                                <p><a class='app-link' href="demo/Rolling-Interface/index.html" target="_blank">电商运营后台滚动界面</a></p>
+                            </div>
+                            <div class="mobile-app">
+                                <h3>移动应用</h3>
+                                <p><a class='app-link' href="demo/WeChat-Lucky-Money/HongBao.html" target="_blank">微信抢红包</a></p>
+                                <p><a class='app-link' href="demo/Rolling-Interface/index.html" target="_blank">报名表单</a></p>
+                            </div>
+                        </div>
+                        <footer class="dialog-footer">
+                            <button class="my-work" data-modal-close>Close</button>
+                        </footer>
+                    </div>
+                </div>
+                <div class="dialog-overlay"></div>
+            </div>
+        </div>
+    </div>
+    <!--   end home-top   -->
+    <!--   start web-tech  -->
+    <div class="page-block web-tech">
+        <div class="web-tech-title">
+            <h1>前端技术</h1>
+            <p>专注于分享最前沿的Web开发技术,教程,资源和素材。</p>
+        </div>
+        <div class="tech-block">
+            <div class="web-enjoy" id="webTech">
+                <ul class="web-list">
+                    <li class="web-item">
+                        <div class="web-title">
+                            <div class="tech-icon tech-icon1"></div>
+                            <h3><a class="post-title-link" href="https://www.w3.org/html/" target="_blank">html5</a></h3>
+                            <h4>
+                                <span>万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言(HTML)。</span>
+                            </h4>
+                            <a class="ca-more hvr-sweep-to-right">more...</a>
+                        </div>
+                        <div class="web-info">
+                            <h6>HTML5 简介</h6>
+                            <span class="ca-close">close</span>
+                            <div class="ca-content-text">
+                                <p>HTML5是近十年来Web开发标准最巨大的飞跃，并非仅仅用来表示Web内容，它的新使命是将Web带入一个成熟的应用平台，在HTML 5平台上，视频，音频，图象，动画，以及同电脑的交互都被标准化。 </p>
+                            </div>
+                            <p class="ca-title-reference">Html5 Reference</p>
+                            <ul>
+                                <li><a href="http://www.w3school.com.cn/tags/index.asp" target="_blank">HTML 参考手册</a></li>
+                                <li><a href="https://www.w3.org/TR/2015/NOTE-2dcontext2-20150929/" target="_blank">HTML Canvas 2D Context</a></li>
+                                <li><a href="http://www.w3schools.com/html/default.asp" target="_blank">HTML Tutorial</a></li>
+                                <li><a href="https://dev.w3.org/html5/html-author/" target="_blank">HTML5 Reference</a></li>
+                                <li><a href="http://www.html5cn.org/" target="_blank">HTML5中国</a></li>
+                                <li><a href="http://www.html5cn.com.cn/" target="_blank">HTML5中文学习网</a></li>
+                                <li><a href="http://www.html5plus.org/doc/h5p.html" target="_blank">HTML5 + API Reference</a></li>
+                                <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5" target="_blank">HTML5 - Web开发者指南 | MDN</a></li>
+                                <li><a href="http://www.h5course.com/" target="_blank">HTML5学堂</a></li>
+                                <li><a href="http://www.ibm.com/developerworks/cn/web/lp/html5/" target="_blank">HTML5 专题</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="web-item">
+                        <div class="web-title">
+                            <div class="tech-icon tech-icon2"></div>
+                            <h3><a class="post-title-link" href="http://css.doyoe.com/" target="_blank">css</a></h3>
+                            <h4>
+                                <span>层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。</span>
+                            </h4>
+                            <a class="ca-more hvr-sweep-to-right">more...</a>
+                        </div>
+                        <div class="web-info">
+                            <h6>CSS 简介</h6>
+                            <span class="ca-close">close</span>
+                            <div class="ca-content-text">
+                                <p>CSS能够对网页中的对象的位置排版进行像素级的精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力，并能够进行初步交互设计，是目前基于文本展示最优秀的表现设计语言。</p>
+                            </div>
+                            <p class="ca-title-reference">Css Reference</p>
+                            <ul>
+                                <li><a href="http://css.doyoe.com/" target="_blank">CSS参考手册</a></li>
+                                <li><a href="http://www.w3school.com.cn/css/index.asp" target="_blank">CSS 教程</a></li>
+                                <li><a href="http://www.php100.com/manual/css3_0/index.html" target="_blank">CSS3 Properties 在线手册</a></li>
+                                <li><a href="http://www.dynamicdrive.com/style/" target="_blank">Dynamic Drive CSS Library</a></li>
+                                <li><a href="http://bradfrost.github.io/this-is-responsive/patterns.html" target="_blank">CSS网页响应式设计</a></li>
+                                <li><a href="http://www.runoob.com/css/css-tutorial.html" target="_blank">CSS 教程 | 菜鸟教程</a></li>
+                                <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference" target="_blank">CSS 参考 - CSS | MDN</a></li>
+                                <li><a href="http://www.tutorialspoint.com/css/" target="_blank">CSS Tutorial</a></li>
+                                <li><a href="http://tympanus.net/codrops/css_reference" target="_blank">CSS Reference</a></li>
+                                <li><a href="http://www.css3-tutorial.net/" target="_blank">The complete CSS3 tutorial</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="web-item">
+                        <div class="web-title">
+                            <div class="tech-icon tech-icon3"></div>
+                            <h3><a class="post-title-link" href="http://www.javascriptsource.com/" target="_blank">javascript</a></h3>
+                            <h4>
+                                <span>一种基于对象和事件驱动并具有相对安全性的客户端脚本语言。</span>
+                            </h4>
+                            <a class="ca-more hvr-sweep-to-right">more...</a>
+                        </div>
+                        <div class="web-info">
+                            <h6>JAVASCRIPT 简介</h6>
+                            <span class="ca-close">close</span>
+                            <div class="ca-content-text">
+                                <p>JavaScript广泛用于Web应用开发,常用来为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览效果。通常JavaScript脚本是通过嵌入在HTML中来实现自身的功能的。</p>
+                            </div>
+                            <p class="ca-title-reference">Javascript Reference</p>
+                            <ul>
+                                <li><a href="http://www.w3school.com.cn/jsref/index.asp" target="_blank">JavaScript 参考手册</a></li>
+                                <li><a href="http://www.javascriptsource.com/reference/core_ref/contents.html" target="_blank">Javascript Source</a></li>
+                                <li><a href="http://www.2cto.com/kf/qianduan/JS/" target="_blank">javascript教程 - 红黑联盟</a></li>
+                                <li><a href="http://www.javascriptkit.com/" target="_blank">Javascript Kit</a></li>
+                                <li><a href="http://www.ijavascript.cn/" target="_blank">JavaScript教程网</a></li>
+                                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">mozilla  javascript</a></li>
+                                <li><a href="http://www.itxueyuan.org/javascript/" target="_blank">JavaScript编程学院_IT学院</a></li>
+                                <li><a href="http://javascript.ruanyifeng.com/" target="_blank">JavaScript 标准参考教程（alpha）</a></li>
+                                <li><a href="http://www.javascriptcn.com/" target="_blank">Javascript中文网</a></li>
+                                <li><a href="http://www.runoob.com/js/js-tutorial.html" target="_blank">JavaScript 教程 | 菜鸟教程</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="web-item">
+                        <div class="web-title">
+                            <div class="tech-icon tech-icon4"></div>
+                            <h3><a class="post-title-link" href="http://bootstrap.evget.com/" target="_blank">bootstrap</a></h3>
+                            <h4>
+                                <span>简洁、直观、强悍、移动设备优先的前端技术框架,让web开发更迅速、简单。</span>
+                            </h4>
+                            <a class="ca-more hvr-sweep-to-right">more...</a>
+                        </div>
+                        <div class="web-info">
+                            <h6>BOOTSTRAP 简介</h6>
+                            <span class="ca-close">close</span>
+                            <div class="ca-content-text">
+                                <p> Bootstrap,来自 Twitter,是目前最受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的,它简洁灵活,使得 Web 开发更加快捷。 </p>
+                            </div>
+                            <p class="ca-title-reference">Bootstrap Reference</p>
+                            <ul>
+                                <li><a href="http://www.bootcss.com/" target="_blank">Bootstrap中文网</a></li>
+                                <li><a href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html" target="_blank">Bootstrap 教程 | 菜鸟教程</a></li>
+                                <li><a href="http://www.bootstrapworld.org/" target="_blank">Bootstrap World</a></li>
+                                <li><a href="http://www.cssmoban.com/tags.asp?n=Bootstrap" target="_blank">Bootstrap网站模板</a></li>
+                                <li><a href="http://ninghao.net/bootstrap/" target="_blank">Bootstrap 中文 - 宁皓网</a></li>
+                                <li><a href="http://bootstraptaste.com/" target="_blank">Bootstrap Themes and Website</a></li>
+                                <li><a href="http://www.bootstrapworld.org/" target="_blank">Bootstrap World</a></li>
+                                <li><a href="http://www.bootshape.com/" target="_blank">Free Bootstrap Templates</a></li>
+                                <li><a href="https://bootstrapcreative.com/" target="_blank">Bootstrap Creative</a></li>
+                                <li><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Bootstrap Tutorial</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="web-item">
+                        <div class="web-title">
+                            <div class="tech-icon tech-icon5"></div>
+                            <h3><a class="post-title-link" href="http://jquery.com/" target="_blank">jquery</a></h3>
+                            <h4>
+                                <span>一套跨浏览器的JavaScript库，简化HTML与JavaScript之间的操作</span>
+                            </h4>
+                            <a class="ca-more hvr-sweep-to-right">more...</a>
+                        </div>
+                        <div class="web-info">
+                            <h6>JQUERY 简介</h6>
+                            <span class="ca-close">close</span>
+                            <div class="ca-content-text">
+                                <p>jQuery是免费、开源的，使用MIT许可协议。jQuery的语法设计可以使开发更加便捷，提供API让开发者编写插件。其模块化的使用方式使开发者可以很轻松的开发出功能强大的静态或动态网页。</p>
+                            </div>
+                            <p class="ca-title-reference">Jquery Reference</p>
+                            <ul>
+                                <li><a href="http://api.jquery.com/" target="_blank">jQuery API Documentation</a></li>
+                                <li><a href="http://jquery.cuishifeng.cn/" target="_blank">Query API 1.12 速查表</a></li>
+                                <li><a href="https://www.hscripts.com/scripts/jquery/index.php" target="_blank">JQuery Script Examples</a></li>
+                                <li><a href="http://www.w3school.com.cn/jquery/index.asp" target="_blank">W3C_jQuery 教程</a></li>
+                                <li><a href="http://api.jquery.com/" target="_blank">jQuery API Documentation</a></li>
+                                <li><a href="http://www.jq-school.com/" target="_blank">jquery school</a></li>
+                                <li><a href="http://jqueryui.com/" target="_blank">jQuery UI</a></li>
+                                <li><a href="https://jquerymobile.com/" target="_blank">jQuery Mobile</a></li>
+                                <li><a href="http://kb.cnblogs.com/zt/jquery/" target="_blank">博客园jQuery专题</a></li>
+                                <li><a href="http://www.jeasyui.com/" target="_blank">jQuery EasyUI</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="web-item">
+                        <div class="web-title">
+                            <div class="tech-icon tech-icon6"></div>
+                            <h3><a class="post-title-link" href="https://www.angularjs.org/" target="_blank">AngularJS</a></h3>
+                            <h4>
+                                <span>一组用来开发Web页面的框架、模板以及数据绑定和丰富UI的组件</span>
+                            </h4>
+                            <a class="ca-more hvr-sweep-to-right">more...</a>
+                        </div>
+                        <div class="web-info">
+                            <h6>ANGULARJS 简介</h6>
+                            <span class="ca-close">close</span>
+                            <div class="ca-content-text">
+                                <p>使用HTML作为模板语言，通过扩展HTML的语法，能更清楚、简洁地构建应用组件。它的创新点在于，利用数据绑定和依赖注入，它使你不用再写大量的代码了。</p>
+                            </div>
+                            <p class="ca-title-reference">AngularJS Reference</p>
+                            <ul>
+                                <li><a href="http://www.apjs.net/" target="_blank">AngularJS中文网</a></li>
+                                <li><a href="http://docs.angularjs.cn/api" target="_blank">AngularJS API Docs</a></li>
+                                <li><a href="http://www.yiibai.com/angularjs/angularjs_views.html" target="_blank">AngularJS视图</a></li>
+                                <li><a href="http://www.360doc.com/content/14/0414/15/14416931_368816305.shtml" target="_blank">AngularJS开发指南-中文教程</a></li>
+                                <li><a href="http://each.sinaapp.com/angular/" target="_blank">AngularJS在线教程</a></li>
+                                <li><a href="http://www.angularjs.wang/" target="_blank">AngularJS 2.0中文视频教程分享网</a></li>
+                                <li><a href="http://www.tutorialspoint.com/angularjs/" target="_blank">AngularJS Tutorial</a></li>
+                                <li><a href="http://www.yiibai.com/angularjs/angularjs_quick_guide.html" target="_blank">AngularJS快速入门</a></li>
+                                <li><a href="http://www.ziqiangxuetang.com/angularjs/angularjs-tutorial.html" target="_blank">AngularJS 教程 - 自强学堂</a></li>
+                                <li><a href="http://www.runoob.com/angularjs/angularjs-tutorial.html" target="_blank">AngularJS 教程 | 菜鸟教程</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+
+        </div>
+     </div>
+    <!--   end web-tech  -->
+    <!--   start page-site-enjoy  -->
+    <div class="page-block page-site-enjoy">　
+        <div class="site-title">
+            <h1>酷站收藏</h1>
+            <p>网页设计推荐的酷站分享网站,提供优秀设计作品欣赏。</p>
+        </div>
+        <div class="site-enjoy">
+            <div class="site-item">
+                <div class="site-content">
+                    <a class="site-icon"><img src="images/68design.png" art="68design"/></a>
+                    <h2 class="decoration-effect"><a class="effect-bubba" href="http://cwd.68design.net/" target="_blank">68design</a></h2>
+                    <p>网站设计行业第一垂直门户，国内唯一能为网页设计师提供专业晋级、认证服务的实名制网站，拥有国内最大的原创商业网站案例库。</p>
+                </div>
+            </div>
+            <div class="site-item">
+                <div class="site-content">
+                    <a class="site-icon"><img src="images/U.png" art="设友公社"/></a>
+                    <h2 class="decoration-effect"><a class="effect-bubba" href="http://www.uuuu.cc/kuzhan/" target="_blank">设友公社</a></h2>
+                    <p> 目前全球最具影响力的设计门户，是服务于中国及全球视觉创意产业的领先在线媒体，产业服务提供商及创意人群互动社区。</p>
+                </div>
+            </div>
+            <div class="site-item">
+                <div class="site-content">
+                    <a class="site-icon"><img src="images/zcool.png" art="站酷"/></a>
+                    <h2 class="decoration-effect"><a class="effect-bubba" href="http://www.zcool.com.cn/" target="_blank">站酷</a></h2>
+                    <p>中国最具人气的设计师互动平台，300万设计师聚集地。致力于打造伴随设计创意群体学习、交流、就业、交易、创业各个成长环节的生态体系。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   end page-site-enjoy  -->
+    <!--   start creativity   -->
+    <div class="page-block creativity">
+        <div class="creativity-title">
+            <h1>创意分享</h1>
+            <p>综合性创意设计资讯平台,集合全球各类创意资讯信息。</p>
+        </div>
+        <div class="creativity-block">
+            <div class="creativity-item">
+                <div class="circle-content circle-img1">
+                    <div class="circle-info">
+                        <h3><a href="http://www.cvunion.com/portal.php" target="_blank">创意中国</a></h3>
+                        <p>是一家服务于全球创意人群，以视觉资讯、互动社区为一体的中国顶尖创意门户网站。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="creativity-item">
+                <div class="circle-content circle-img2">
+                    <div class="circle-info">
+                        <h3><a href="http://www.logohhh.com/" target="_blank">狼牙创意</a></h3>
+                        <p>分享创意资源,激发设计灵感。这是一个综合性很强的设计创意资源分享网站。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="creativity-item">
+                <div class="circle-content circle-img3">
+                    <div class="circle-info">
+                        <h3><a href="http://www.shijue.me/" target="_blank">视觉中国</a></h3>
+                        <p>视觉ME设计社区 视觉中国设计师社区是一个致力于设计作品分享、发现、售卖的专业平台。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   end creativity   -->
+    <!--   start contact-block   -->
+    <div class="page-block contact-block">
+        <div class="contact-main">
+            <h1>关于我</h1>
+            <p>一个对理想有着执着追求的人，坚信是金子总会发光。诚实做人，忠实做事是我的人生准则，自强不息是我的追求。走过了沧桑，方能体会到悲凉；历经了起落，才会懂得喜忧；从俗世的繁华中领悟出内心需要的清淡平静，行走在未来的时光中，做真实的自己。</p>
+            <div class="contact-btn">
+                <a href="mailto:sheng_jianfei@163.com" target="_blank">CONTACT ME</a>
+            </div>
+        </div>
+    </div>
+    <!--   end contact-block   -->
+    <!--   start footer   -->
+    <footer class="copyright">
+        <div >
+            <p>Copyright © 2016—2018,Sheng Jian Fei's Personal Website,All Rights Reserved.</p>
+            <p>地址：中国·台州·温岭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮编：317523&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱:sheng_jianfei@163.com</p>
+        </div>
+    </footer>
+    <!--   end footer   -->
+</body>
+</html>
