@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>在线报名</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="webuploader/webuploader.css">
+    <link type="text/css" rel="stylesheet" href="css/SingnUp.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="webuploader/webuploader.js"></script>
+    <script type="text/javascript" src="js/SingnUp.js" ></script>
+</head>
+<body>
+     <header class="title">
+         <h1 class="title-name">在线报名</h1>
+     </header>
+    <div class="registrator">
+        <h2>你还没有报名参加活动，快报名吧？</h2>
+        <form  id="testForm" >
+            <input type="text" name="name" class="text-input" id="person-name" placeholder="请输入姓名" /><br>
+            <input type="text" name="phone-num" class="text-input" id="phonenumber" placeholder="请输入手机号码" /><br>
+            <div class="imgdiv">
+
+                <div class="textarea" id="img-info"><textarea rows="3" cols="20" class="textarea-input" id="person-info" onfocus="if (value == '输入自我介绍，个人详情，拉票宣言等等！必须上传最少一张图片，请认真填写!') { value = '' }" onblur="if (value == '') { value = '输入自我介绍，个人详情，拉票宣言等等！必须上传最少一张图片，请认真填写!' }">输入自我介绍，个人详情，拉票宣言等等！必须上传最少一张图片，请认真填写!</textarea></div>
+                <div id="uploader-demo">
+                    <!--用来存放item-->
+                        <div id="fileList" class="uploader-list" contenteditable="true"></div>
+                        <div id="filePicker">上传图片</div>
+                </div>
+            </div>
+            <p class="img-notice">建议使用WIFI上传图片，可上传多张图片，照片大小无限制，但考虑上传速度建议500K内</p>
+            <input type="button" name="submit" onclick="submitCheck()" class="btn-submit" value="提交报名信息" />
+        </form>
+    </div>
+    <div id="InfoDialog" style="width:150px;height:30px;position:fixed;margin:auto;top:0;bottom:0;left:0;right:0;
+                background-color:black;color:white;text-align:center;padding:5px 0;display:none;">
+    </div>
+    <script type="text/javascript" src="js/jquery.form.js"></script>
+</body>
+</html>
